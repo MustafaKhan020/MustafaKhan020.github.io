@@ -24,16 +24,16 @@
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1><Library App></h1>
+								<h1>Library App</h1>
 								<p>Mustafa Khan</p>
 							</div>
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
+								<li><a href="#overview">overview</a></li>
+								<li><a href="#backend">backend</a></li>
+								<li><a href="#frontend">frontend</a></li>
+								<li><a href="#system">system</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -43,57 +43,31 @@
 					<div id="main">
 
 						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+							<article id="overview">
+								<h2 class="major">Overview</h2>
+								<span class="image main"><img src="images/overview_screenshot.png" alt="" /></span>
+								<p>This project is a Modern Library Management System that lets users organize and manage collections of movies and books through a clean, responsive interface. It combines a Tkinter GUI with a Flask REST API, showing how a real-world application separates frontend visuals from backend logic.								
+								<p>The system allows users to browse categories, view items in a modern card layout, search by title, director, or author, add, edit, and delete entries. The goal is to create a simple but realistic full-stack application using Python.</p>
+									
 							</article>
 
 						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+							<article id="backend">
+								<h2 class="major">backend</h2>
+								<span class="image main"><img src="images/backend_screenshot.png" alt="" /></span>
+								<p>The backend of the project is powered by Flask, serving as the central system responsible for storing and managing all library data. Movies and books are kept in a structured dictionary that organizes everything into categories, allowing the frontend to request data in a clean, consistent way. The backend validates new entries, handles searches, processes item creation and deletion, and returns responses in JSON so the interface can update smoothly. It includes endpoints for retrieving all items, filtering by category, searching by title, accessing metadata for specific items, adding new media, and deleting existing entries. Through these endpoints, the backend maintains complete control over the system's data, ensuring accuracy and reliability.</p>								
 							</article>
 
 						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+							<article id="frontend">
+								<h2 class="major">frontend</h2>
+								<p>The frontend is a dark-themed Tkinter interface designed to be simple, modern, and user-friendly. It communicates with the backend through HTTP requests and displays the information returned by the server in a visually appealing way. Users can switch between the movies and books sections, browse through categories, view all items at once, and interact with each item through a card-based layout. A built-in search bar allows partial matches for titles, authors, and directors, making it easy to find items quickly. The interface also supports adding new entries, editing existing ones, and removing selected items through intuitive pop-up dialogs. The layout responds to window size changes, making the experience fluid and comfortable. Every action in the GUI leads to a request sent to the backend, and the results are reflected immediately on the screen.</p>
 							</article>
 
 						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
+							<article id="system">
+								<h2 class="major">system</h2>
+								<p>The system follows a simple but realistic client–server model, even though everything runs locally on the same machine. When the application starts, the Flask server is launched in a background thread, allowing it to run independently while the Tkinter interface opens in the foreground. As soon as the GUI loads, it requests data from the server and fills the interface with the current library contents. Whenever the user searches, edits, adds, or deletes an item, the GUI sends an API request to the backend, where the data is updated. The server then returns the updated information, and the interface refreshes to reflect the changes. The project relies on Python, Tkinter for the interface, Flask for the backend logic, the Requests library for communication, and threading to keep both components running simultaneously. This architecture keeps the program modular and easy to extend with future features or different types of frontends.</p>
 							</article>
 
 						<!-- Elements -->
